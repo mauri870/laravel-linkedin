@@ -30,9 +30,6 @@ class LinkedinClassTest extends PhpUnit
      */
     public function testConstructor()
     {
-        $this->assertEquals($this->linkedin->getAppId(), '123456789',
-            'Expect the App ID to be set.');
-        $this->assertEquals($this->linkedin->getAppSecret(), '987654321',
-            'Expect the API secret to be set.');
+        $this->assertEquals(get_parent_class($this->linkedin), \Happyr\LinkedIn\LinkedIn::class);
     }
 }
