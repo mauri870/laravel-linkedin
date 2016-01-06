@@ -4,11 +4,27 @@
 This package is a wrapper for [Happyr/LinkedIn-API-client](https://github.com/Happyr/LinkedIn-API-client).
 You can view the basic intructions [here](https://github.com/Happyr/LinkedIn-API-client/blob/master/Readme.md). Don't forget to consult the oficial [LinkedIn API](https://developer.linkedin.com/) site.
 
-> I encourage users to test the branch [psr-7](https://github.com/mauri870/laravel-linkedin/tree/psr-7) , which is being adopted the psr-7 structure and the independence of an specific http-client. Once the dependencies are stable I will be merge. Please report any bugs or problems.
+> This is a development branch for [psr-7](http://www.php-fig.org/psr/psr-7/) standards. This is not a *stable* branch. Don't use it in production!
+
+
+#### Before install
+You need change the minimum stability flag on your composer.json to `dev` because various dependencies on this package has no stable releases. As soon it's stable I release a stable version too.
+
+```json
+"minimum-stability": "dev",
+```
+
+For the new psr-7 conventions you need require a http-client for use. Consult the [php-http/client-implementation](https://packagist.org/providers/php-http/client-implementation) virtual package to find clients to use. For more information about virtual packages please refer to [Httplug](http://docs.php-http.org/en/latest/httplug/users.html). Example:
+                                                                      
+```bash
+composer require php-http/guzzle6-adapter:dev-master
+```
+
+> Remember to require a http-client before install this package otherwise you will obtain errors during installation
 
 #### Install with composer
 ```bash
-composer require mauri870/laravel-linkedin
+composer require mauri870/laravel-linkedin:dev-psr-7
 ```
 
 #### Add service Provider
@@ -32,7 +48,7 @@ In order to use this API client (or any other LinkedIn clients) you have to [reg
 with LinkedIn to receive an API key. Once you've registered your LinkedIn app, you will be provided with
 an *API Key* and *Secret Key*, please fill this values on `linkedin.php` config file.
 
-####Basic Usage
+#### Basic Usage
 The unique difference in this package is the `LinkedIn` facade. Instead of this:
 ```php
 $linkedIn=new Happyr\LinkedIn\LinkedIn('app_id', 'app_secret');
