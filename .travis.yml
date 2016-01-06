@@ -7,5 +7,6 @@ php:
 
 before_script:
   - composer self-update
+  - composer require php-http/guzzle6-adapter:dev-master
   - composer install
 script: vendor/bin/phpunit
