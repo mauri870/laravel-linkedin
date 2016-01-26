@@ -10,13 +10,14 @@
             "email": "mauri870@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
         "php": ">=5.5.9",
         "illuminate/contracts": "~5.1 || ~5.2",
         "illuminate/http": "~5.1 || ~5.2",
         "illuminate/support": "~5.1 || ~5.2",
         "illuminate/database": "~5.1 || ~5.2",
-	"php-http/httplug": "v1.0.0-beta",
+	    "php-http/httplug": "v1.0.0-beta",
         "happyr/linkedin-api-client": "dev-master"
     },
     "require-dev": {
