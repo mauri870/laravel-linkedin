@@ -35,7 +35,7 @@ of `php-http/discovery`.
 php composer.phar require php-http/discovery:^0.5
 ```
 
-> Remember to require a http-client before install this package otherwise you will obtain errors during installation
+> Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
 
 #### Install with composer
 ```bash
