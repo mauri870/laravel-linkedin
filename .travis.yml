@@ -8,6 +8,6 @@ php:
 before_script:
   - composer self-update
   - composer require php-http/guzzle6-adapter:dev-master
-  - composer require php-http/httplug:v1.0.0
+  - composer require php-http/httplug:v1.0.0-beta
   - composer install
 script: vendor/bin/phpunit
