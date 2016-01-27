@@ -16,7 +16,7 @@ You need change the minimum stability flag on your composer.json to `dev` becaus
 
 This package require httplug:
 ```bash
-composer require php-http/httplug:v1.0.0
+composer require php-http/httplug:v1.0.0-beta
 ```
 
 For the new psr-7 conventions you need require a http-client for use. Consult the [php-http/client-implementation](https://packagist.org/providers/php-http/client-implementation) virtual package to find clients to use. For more information about virtual packages please refer to [Httplug](http://docs.php-http.org/en/latest/httplug/users.html). Example:
