@@ -22,7 +22,7 @@
         "puli/discovery": "^1.0-beta9",
 	"puli/manager": "^1.0-beta10",
         "puli/url-generator": "^1.0-beta4",
-        "happyr/linkedin-api-client": "dev-master"
+        "happyr/linkedin-api-client": "dev-master@dev"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.0",
