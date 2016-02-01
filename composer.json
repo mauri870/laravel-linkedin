@@ -17,10 +17,14 @@
         "illuminate/http": "~5.1 || ~5.2",
         "illuminate/support": "~5.1 || ~5.2",
         "illuminate/database": "~5.1 || ~5.2",
-        "happyr/linkedin-api-client": "dev-master"
+        "puli/composer-plugin": "^1.0.0-beta9",
+        "puli/repository": "^1.0-beta9",
+        "puli/discovery": "^1.0-beta9",
+        "puli/url-generator": "^1.0-beta4",
+        "happyr/linkedin-api-client": "@dev"
     },
     "require-dev": {
-        "phpunit/phpunit": "*"
+        "phpunit/phpunit": "^5.0"
     },
     "autoload": {
         "psr-4": {
