@@ -32,5 +32,10 @@
         "psr-4": {
             "Mauri870\\LinkedIn\\": "src/Mauri870/LinkedIn/"
         }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-psr-7": "1.1.x-beta"
+        }
     }
 }
