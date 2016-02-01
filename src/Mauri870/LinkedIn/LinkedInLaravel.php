@@ -9,7 +9,7 @@
 
 namespace Mauri870\LinkedIn;
 
-use Happyr\LinkedIn\LinkedIn;
+use \Happyr\LinkedIn\LinkedIn;
 
 class LinkedInLaravel extends LinkedIn
 {
