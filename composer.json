@@ -22,8 +22,7 @@
         "puli/discovery": "^1.0-beta9",
 	"puli/manager": "^1.0-beta10",
         "puli/url-generator": "^1.0-beta4",
-        "happyr/linkedin-api-client": "dev-master",
-        "php-http/guzzle6-adapter": "^1.0"
+        "happyr/linkedin-api-client": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^5.0",
