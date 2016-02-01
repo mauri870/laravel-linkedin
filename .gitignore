@@ -1,3 +1,6 @@
 .idea/
 vendor/
 composer.lock
+.puli/
+puli.json
+puli.phar
