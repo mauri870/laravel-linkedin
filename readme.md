@@ -9,6 +9,10 @@ You can view the basic intructions [here](https://github.com/Happyr/LinkedIn-API
 
 #### Before install
 
+If you get errors with dependencies on installing please change your minimum stability flag to beta
+```json
+"minimum-stability": "beta"
+```
 This library does not have a dependency on Guzzle or any other library that sends HTTP requests. We use the awesome Httplug to achieve the decoupling.
 For the new psr-7 conventions you need require a http-client for use. Consult the [php-http/client-implementation](https://packagist.org/providers/php-http/client-implementation) virtual package to find clients to use. For more information about virtual packages please refer to [Httplug](http://docs.php-http.org/en/latest/httplug/users.html). Example:
                                                                       
