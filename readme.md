@@ -8,31 +8,12 @@ You can view the basic intructions [here](https://github.com/Happyr/LinkedIn-API
 
 
 #### Before install
-You need change the minimum stability flag on your composer.json to `dev` because various dependencies on this package has no stable releases. As soon it's stable I release a stable version too.
 
-```json
-"minimum-stability": "dev",
-```
-
-This package require httplug:
-```bash
-composer require php-http/httplug:v1.0.0-beta
-```
-
+This library does not have a dependency on Guzzle or any other library that sends HTTP requests. We use the awesome Httplug to achieve the decoupling.
 For the new psr-7 conventions you need require a http-client for use. Consult the [php-http/client-implementation](https://packagist.org/providers/php-http/client-implementation) virtual package to find clients to use. For more information about virtual packages please refer to [Httplug](http://docs.php-http.org/en/latest/httplug/users.html). Example:
                                                                       
 ```bash
 composer require php-http/guzzle6-adapter:dev-master
-```
-
-##### Puli
-
-If you run in to issues with [Puli](http://docs.puli.io/en/latest/) when installing or gets the error *"Puli Factory is not available"*.
-Make sure you have installed [Puli cli](http://docs.puli.io/en/latest/installation.html) or try to require a lower version
-of `php-http/discovery`.
-
-```bash
-php composer.phar require php-http/discovery:^0.5
 ```
 
 > Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
