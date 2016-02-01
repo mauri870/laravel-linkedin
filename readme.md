@@ -16,6 +16,10 @@ For the new psr-7 conventions you need require a http-client for use. Consult th
 composer require php-http/guzzle6-adapter:dev-master
 ```
 
+#### Puli 
+
+Make sure you have installed [Puli cli](http://docs.puli.io/en/latest/installation.html) globally.
+
 > Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
 
 #### Install with composer
