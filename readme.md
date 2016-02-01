@@ -18,7 +18,7 @@ composer require php-http/guzzle6-adapter:dev-master
 
 #### Puli 
 
-Make sure you have installed [Puli cli](http://docs.puli.io/en/latest/installation.html) globally.
+Make sure you have installed [Puli cli](http://docs.puli.io/en/latest/installation.html) globally, or put the puli.phar on root folder of your project.
 
 > Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
 
