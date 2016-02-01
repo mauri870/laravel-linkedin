@@ -8,7 +8,7 @@ php:
 
 before_script:
   - wget https://github.com/puli/cli/releases/download/1.0.0-beta10/puli.phar
-  - ls -l
+  - chmod 755 puli.phar
   - composer self-update
   - composer require php-http/guzzle6-adapter:dev-master
   - composer install
