@@ -35,7 +35,7 @@
     },
     "extra": {
         "branch-alias": {
-            "dev-psr-7": "1.1.x-beta"
+            "dev-psr-7": "1.1.x-dev"
         }
     }
 }
