@@ -8,9 +8,12 @@
  * @license   https://opensource.org/licenses/MIT MIT License
  */
 
-use PHPUnit_Framework_TestCase as PhpUnit;
+namespace Mauri870\LinkedIn\Tests;
 
-class LinkedinClassTest extends PhpUnit
+use Happyr\LinkedIn\LinkedIn;
+use Mauri870\LinkedIn\LinkedInLaravel;
+
+class LinkedinClassTest extends TestCase
 {
     const APP_ID = '123456789';
     const APP_SECRET = '987654321';
@@ -22,7 +25,7 @@ class LinkedinClassTest extends PhpUnit
 
     public function setUp()
     {
-        $this->linkedin = new \Mauri870\LinkedIn\LinkedInLaravel(self::APP_ID, self::APP_SECRET);
+        $this->linkedin = new LinkedInLaravel(self::APP_ID, self::APP_SECRET);
     }
 
     /**
@@ -30,6 +33,6 @@ class LinkedinClassTest extends PhpUnit
      */
     public function testConstructor()
     {
-        $this->assertEquals(get_parent_class($this->linkedin), \Happyr\LinkedIn\LinkedIn::class);
+        $this->assertEquals(get_parent_class($this->linkedin), LinkedIn::class);
     }
 }
