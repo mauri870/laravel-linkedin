@@ -21,11 +21,13 @@
     },
     "require-dev": {
         "phpunit/phpunit": "^5.0",
-        "puli/cli": "^1.0@beta"
+        "puli/cli": "^1.0@beta",
+        "orchestra/testbench": "~3.0"
     },
     "autoload": {
         "psr-4": {
-            "Mauri870\\LinkedIn\\": "src/Mauri870/LinkedIn/"
+            "Mauri870\\LinkedIn\\": "src/Mauri870/LinkedIn/",
+            "Mauri870\\LinkedIn\\Tests\\": "tests"
         }
     }
 }
