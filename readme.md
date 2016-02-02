@@ -29,6 +29,7 @@ composer require puli/composer-plugin:^1.0.0@beta puli/repository:^1.0-@beta pul
 ```bash
 
 If you receive an error like:
+
 `Warning: Plugin initialization failed: The "puli"/"puli.phar" command could not be found.`
 
 Try download the puli.phar on root folder of your project and add 755 permissions to puli.phar
@@ -38,9 +39,11 @@ wget https://github.com/puli/cli/releases/download/1.0.0-beta10/puli.phar
 chmod 755 puli.phar
 ```
 
-> Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
 
 #### Install with composer
+
+> Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
+
 ```bash
 composer require mauri870/laravel-linkedin:dev-psr-7
 ```
