@@ -9,9 +9,9 @@ You can view the basic intructions [here](https://github.com/Happyr/LinkedIn-API
 
 #### Before install
 
-If you get errors with dependencies on installing please change your minimum stability flag to beta
+If you get errors with dependencies on installing please change your minimum stability flag to dev
 ```json
-"minimum-stability": "beta"
+"minimum-stability": "dev"
 ```
 This library does not have a dependency on Guzzle or any other library that sends HTTP requests. We use the awesome Httplug to achieve the decoupling.
 For the new psr-7 conventions you need require a http-client for use. Consult the [php-http/client-implementation](https://packagist.org/providers/php-http/client-implementation) virtual package to find clients to use. For more information about virtual packages please refer to [Httplug](http://docs.php-http.org/en/latest/httplug/users.html). Example:
@@ -20,12 +20,23 @@ For the new psr-7 conventions you need require a http-client for use. Consult th
 composer require php-http/guzzle6-adapter:dev-master
 ```
 
-#### Puli 
+#### Auto discovery with Puli 
 
-Make sure you have installed [Puli cli](http://docs.puli.io/en/latest/installation.html) globally, or put the puli.phar on root folder of your project.
+This library has a dependency on php-http/discovery that will find a HTTP client and a library that can create PSR-7 messages that you already have installed. It uses [Puli](http://docs.puli.io) for the actual discovery.
+Install Puli and its dependencies using this command:
+```bash
+composer require puli/composer-plugin:^1.0.0@beta puli/repository:^1.0-@beta puli/discovery:^1.0@beta puli/manager:^1.0@beta puli/url-generator:^1.0@beta
+```bash
+
 If you receive an error like:
 `Warning: Plugin initialization failed: The "puli"/"puli.phar" command could not be found.`
-Add 755 permissions to puli.phar
+
+Try download the puli.phar on root folder of your project and add 755 permissions to puli.phar
+
+```bash
+wget https://github.com/puli/cli/releases/download/1.0.0-beta10/puli.phar
+chmod 755 puli.phar
+```
 
 > Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
 
