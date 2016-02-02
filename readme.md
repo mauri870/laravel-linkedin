@@ -40,7 +40,7 @@ wget https://github.com/puli/cli/releases/download/1.0.0-beta10/puli.phar
 chmod 755 puli.phar
 ```
 
-
+After, remove your composer.lock and vendor folder and run `composer install`
 #### Install with composer
 
 > Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
