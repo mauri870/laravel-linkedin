@@ -10,7 +10,7 @@
 
 namespace Mauri870\LinkedIn\Tests;
 
-use Happyr\LinkedIn\LinkedIn;
+use Mauri870\LinkedIn\Facades\LinkedIn;
 use Mauri870\LinkedIn\LinkedInLaravel;
 
 class LinkedinClassTest extends TestCase
@@ -25,14 +25,17 @@ class LinkedinClassTest extends TestCase
 
     public function setUp()
     {
+        parent::setUp();
         $this->linkedin = new LinkedInLaravel(self::APP_ID, self::APP_SECRET);
     }
 
-    /**
-     * Test constructor method
-     */
     public function testConstructor()
     {
-        $this->assertEquals(get_parent_class($this->linkedin), LinkedIn::class);
+        $this->assertEquals(get_parent_class($this->linkedin), \Happyr\LinkedIn\LinkedIn::class);
+    }
+
+    public function testCheckIfIsAuthenticated()
+    {
+        $this->assertEquals(false, LinkedIn::isAuthenticated());
     }
 }
