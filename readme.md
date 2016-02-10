@@ -6,7 +6,6 @@ You can view the basic intructions [here](https://github.com/Happyr/LinkedIn-API
 
 > This is a development branch for [psr-7](http://www.php-fig.org/psr/psr-7/) standards. This is not a *stable* branch. Don't use it in production!
 
-
 #### Before install
 
 If you get errors with dependencies on installing please change your minimum stability flag to dev
@@ -41,27 +40,51 @@ chmod 755 puli.phar
 ```
 
 After, remove your composer.lock and vendor folder and run `composer install`
+
 #### Install with composer
 
 > Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
 
+###### If you need install on Lumen, go to [Lumen section](#installation-on-lumen)
+
+### Installation on Laravel
+
+##### Install with composer
 ```bash
 composer require mauri870/laravel-linkedin:dev-psr-7
 ```
 
-#### Add service Provider
-```
+##### Add service Provider
+```php
 Mauri870\LinkedIn\LinkedinServiceProvider::class,
 ```
 
-#### Facade
-```
+##### Facade
+```php
 'LinkedIn'  => \Mauri870\LinkedIn\Facades\LinkedIn::class,
 ```
 
-#### Publish config file
-```
+##### Publish config file
+```bash
 php artisan vendor:publish --provider="Mauri870\LinkedIn\LinkedinServiceProvider"
+```
+
+### Installation on Lumen
+
+##### Install with composer
+```bash
+composer require mauri870/laravel-linkedin:dev-psr-7
+```
+
+##### Add Service Provider, facade and config parameters to the `bootstrap/app.php` file
+```php
+$app->register(\Mauri870\LinkedIn\LinkedinServiceProvider::class);
+class_alias(\Mauri870\LinkedIn\Facades\LinkedIn::class,'LinkedIn');
+
+config(['linkedin' => [
+        'api_key' => env('LINKEDIN_KEY','yourapikey'),
+        'api_secret' => env('LINKEDIN_SECRET','yourapisecret')
+]]);
 ```
 
 ### Usage
