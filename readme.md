@@ -41,7 +41,7 @@ chmod 755 puli.phar
 
 After, remove your composer.lock and vendor folder and run `composer install`
 
-#### Install with composer
+### Installation
 
 > Remember to require a http-client before install this linkedin package otherwise you will obtain errors during installation
 
