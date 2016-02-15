@@ -1,6 +1,11 @@
 ### Linkedin API integration for Laravel Framework
 [![Build Status](https://travis-ci.org/mauri870/laravel-linkedin.svg?branch=master)](https://travis-ci.org/mauri870/laravel-linkedin) [![Coverage Status](https://coveralls.io/repos/mauri870/laravel-linkedin/badge.svg?branch=master&service=github)](https://coveralls.io/github/mauri870/laravel-linkedin?branch=master) [![Latest Stable Version](https://poser.pugx.org/mauri870/laravel-linkedin/v/stable)](https://packagist.org/packages/mauri870/laravel-linkedin) [![Total Downloads](https://poser.pugx.org/mauri870/laravel-linkedin/downloads)](https://packagist.org/packages/mauri870/laravel-linkedin) [![Latest Unstable Version](https://poser.pugx.org/mauri870/laravel-linkedin/v/unstable)](https://packagist.org/packages/mauri870/laravel-linkedin) [![License](https://poser.pugx.org/mauri870/laravel-linkedin/license)](https://packagist.org/packages/mauri870/laravel-linkedin)
 
+> # :warning: DISCONTINUED AND MIGRATED :construction:
+> This project is discontinued.
+> I will not offer more support and bugfixes here.
+> For the newer changes, support and improvements please refer to [artesaos/laravel-linkedin](https://github.com/artesaos/laravel-linkedin)
+
 This package is a wrapper for [Happyr/LinkedIn-API-client](https://github.com/Happyr/LinkedIn-API-client).
 You can view the basic intructions [here](https://github.com/Happyr/LinkedIn-API-client/blob/master/Readme.md). Don't forget to consult the oficial [LinkedIn API](https://developer.linkedin.com/) site.
 
